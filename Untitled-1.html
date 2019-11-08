@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      
+    <title>淘物社 —— 淘出好物</title>
+    <style>* {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial;
+        padding: 10px;
+        background-color:  white;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color:  rgba(43, 150, 29, 0.911);
+        position: fixed;
+        top: 0;
+        width: 97.3%;
+    }
+
+    li {
+        float: right;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 5px 20px;
+        text-decoration: none;
+        background-color:  white;;
+    }
+
+    li a:hover:not(.active) {
+        background-color:  rgba(43, 150, 29, 0.911);
+    }
+
+    .active {
+        background-color:  green;
+    }
+
+    /* 头部标题 */
+
+    .header {
+        font-size: 32px;
+        color:rgba(43, 150, 29, 0.911);
+        background-color:  white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* 导航条 */
+
+    .topnav {
+        overflow: hidden;
+        background-color: green;
+    }
+
+    /* 导航条链接 */
+
+    .topnav a {
+        margin: auto;
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* 链接颜色修改 */
+
+    .topnav a:hover {
+        background-color: darkred;
+        color: black;
+    }
+
+    /* 创建三列 */
+
+    /* Left column */
+
+    .leftcolumn {
+        float: left;
+        width: 33.33%;
+    }
+
+    /* 右侧栏 */
+
+    .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+    }
+
+    /* 图像部分 */
+
+    .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* 文章卡片效果 */
+
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    /* 列后面清除浮动 */
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* 底部 */
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: top;
+        color:#ddd;
+        background-color:  rgba(43, 150, 29, 0.911);
+        margin-top: 20px;
+    }
+
+    /* 响应式布局 - 屏幕尺寸小于 800px 时，两列布局改为上下布局 */
+
+    @media screen and (max-width: 800px) {
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+
+    @media screen and (max-width: 400px) {
+        .topnav a {
+            float: none;
+            width: 100%;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+
+
+    <ul>
+        <li><a class="active">登录</a></li>
+    </ul>
+    <div class="header">
+        <h3 align="left" class="h"><em><strong>淘物社</strong></em></h3>
+    </div>
+
+    <div class="topnav">
+        
+        <a href="#" >推荐</a>
+        <a href="#">日用</a>
+        <a href="#">食品</a>
+        <a href="#">美妆</a>
+        <a href="#">服饰</a>
+        <a href="#">数码</a>
+        <a href="#">书籍</a>
+        <a href="#">其他</a>
+    </div>
+
+
+
+    <div class="footer">
+        <h5>关于我们</h5>
+    </div>
+
+</body>
+
+</html>
